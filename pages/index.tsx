@@ -69,4 +69,13 @@ const Home: NextPage = () => {
   )
 }
 
+// export async function getServerSideProps() {
+//   return {
+//     props: {
+//       what: process.env.WHAT
+//     }
+//   };
+// };
+
+
 export default Home
