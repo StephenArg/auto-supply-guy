@@ -8,10 +8,14 @@ export type StoreItem = {
   SKU: string;
   Tags: string;
   Price?: number;
-  Variations: StoreItem[];
+  Variations: StoreItemVariant[];
   "Size default"?: string;
   "Size name"?: string;
   "Size value(s)"?: string;
   "Variant name"?: string;
   "Variant value(s)"?: string;
+};
+
+export type StoreItemVariant = StoreItem & {
+  Price: number;
 };

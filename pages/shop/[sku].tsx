@@ -9,6 +9,7 @@ import {
   GetStaticPropsResult,
 } from "next";
 import { StoreItem } from "../../types/StoreItem";
+import ItemContainer from "../../components/ItemContainer";
 
 type ItemPageProps = {
   item: StoreItem;
@@ -39,7 +40,7 @@ const ItemPage: FC<ItemPageProps> = ({ item }) => {
 
       <main>
         <NavBar />
-        <div>{item.Name}</div>
+        <ItemContainer item={item} />
       </main>
     </div>
   );

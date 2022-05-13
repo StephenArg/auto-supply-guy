@@ -11,7 +11,7 @@ const StoreItemsContainer: FC<StoreItemsContainerProps> = ({ items }) => {
   return (
     <div className={styles["store-items-container"]}>
       {items.map((item) => (
-        <StoreItem item={item} />
+        <StoreItem key={item._id} item={item} />
       ))}
     </div>
   );

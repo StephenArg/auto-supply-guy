@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import styles from "../../../styles/Store.module.css";
 import { StoreItem } from "../../../types/StoreItem";
 import Router from "next/router";
+import { getPriceRange } from "../../../utils/utilFunctions";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 type StoreItemProps = {
   item: StoreItem;
@@ -16,12 +18,10 @@ const StoreItem: FC<StoreItemProps> = ({ item }) => {
 
   return (
     <div className={styles["store-item"]} onClick={handleClick}>
-      <img src={imageSrc} alt={item.Name}></img>
+      <LazyLoadImage src={imageSrc} alt={item.Name} loading="lazy" />
       <div className={styles["store-item-text"]}>
-        <p>
-          {item.Name}
-          {item.Price && <> - ${item.Price.toFixed(2)}</>}
-        </p>
+        <p>{item.Name}</p>
+        <p>{getPriceRange(item)}</p>
       </div>
     </div>
   );
