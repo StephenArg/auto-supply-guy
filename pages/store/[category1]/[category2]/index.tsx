@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import NavBar from "../components/NavBar";
+import NavBar from "../../../../components/NavBar";
 
-const Store = () => {
+const Category2 = () => {
   return (
     <div>
       <Head>
@@ -35,4 +35,4 @@ const Store = () => {
   );
 };
 
-export default Store;
+export default Category2;

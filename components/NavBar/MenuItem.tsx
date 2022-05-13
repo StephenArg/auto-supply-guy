@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { NavBarItem } from "../../types/NavBar";
 import Dropdown from "./Dropdown";
 import styles from "../../styles/NavBar.module.css";
