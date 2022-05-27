@@ -1,10 +1,12 @@
 .item-container {
+  padding: 3% 18% 0% 10%;
 }
 
 .item-div-top {
   display: flex;
-  padding: 3% 20% 0% 10%;
   justify-content: space-between;
+  border-right: 1px solid #827f7f73;
+  padding-right: 2%;
 }
 
 .item-img {
@@ -25,4 +27,36 @@
 .item-details nav {
   color: rgba(92, 92, 92, 0.5);
   font-style: italic;
+}
+
+.item-details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-selector {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  border-bottom: 1px solid #827f7f73;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.item-selector select {
+  height: 30px;
+  background: white;
+  border-radius: 4px;
+  color: #6a6868;
+  padding-left: 6px;
+  margin-top: 6px;
+}
+
+.item-selector a {
+  width: 50px;
+  font-size: 10px;
+  padding-left: 3px;
+  padding-top: 5px;
+  color: #777070;
 }
